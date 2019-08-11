@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: rocketmq-consumer
+  main:
+    # Spring Boot 2.1 需要设定
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 9466c0d9-b5bd-4f1a-9936-10e37656afdf
+        cluster-name: BJ
+        metadata:
+          version: v1
+          target-version: v1
+    stream:
+      rocketmq:
+        binder:
+          name-server: localhost:9876
+      bindings:
+        input:
+          destination: stream-topic
+          group: stream-rocketmq-group
+server:
+  port: 4000

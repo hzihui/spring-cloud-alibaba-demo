@@ -16,6 +16,13 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:8080
+    stream:
+      rocketmq:
+        binder:
+          name-server: localhost:9876
+      bindings:
+        output:
+          destination: stream-topic
 dubbo:
   registry:
     # 挂载到 Spring Cloud 注册中心
