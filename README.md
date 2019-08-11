@@ -11,3 +11,4 @@
 - Spring cloud Gateway API网关
 - Apache RocketMQ 消息通信
 - Spring Security OAuth2 权限认证
+- Sleuth 链路监控
