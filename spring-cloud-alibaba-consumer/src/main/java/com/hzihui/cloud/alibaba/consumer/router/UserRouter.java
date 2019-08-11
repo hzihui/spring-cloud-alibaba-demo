@@ -9,8 +9,9 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 /**
+ * 用户Mapping控制
  * @author HZI.HUI
- * @date 2019/8/7 22:10
+ * @date 2019/8/7
  */
 @Configuration
 public class UserRouter {
