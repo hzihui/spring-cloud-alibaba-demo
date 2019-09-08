@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: actuator
+  main:
+    # Spring Boot 2.1 需要设定
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 9466c0d9-b5bd-4f1a-9936-10e37656afdf
+        cluster-name: SZ
+        metadata:
+          version: v1
+          target-version: v1

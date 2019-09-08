@@ -13,6 +13,8 @@
         <module>spring-cloud-alibaba-api</module>
         <module>spring-cloud-alibaba-consumer</module>
         <module>spring-cloud-alibaba-rocketmq-consumer</module>
+        <module>spring-cloud-alibaba-gateway</module>
+        <module>spring-cloud-alibaba-actuator</module>
     </modules>
 
     <parent>

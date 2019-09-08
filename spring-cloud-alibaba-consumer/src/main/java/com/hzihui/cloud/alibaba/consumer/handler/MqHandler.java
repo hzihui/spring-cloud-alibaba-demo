@@ -17,7 +17,6 @@ import reactor.core.publisher.Mono;
 public class MqHandler {
 
     private final Source source;
-
     /**
      * 消息提供者
      * @param serverRequest

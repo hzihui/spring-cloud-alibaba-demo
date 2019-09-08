@@ -21,7 +21,10 @@ public class ProductHanlder {
 
     public Mono<ServerResponse> getProductById(ServerRequest serverRequest){
         Optional<String> name = serverRequest.queryParam("name");
-        String resultDesc = this.productService.getProductByUserId(name.get());
+        String resultDesc = null;
+        if(name.isPresent()){
+            resultDesc = this.productService.getProductByUserId(name.get());
+        }
         return ServerResponse.ok().body(Mono.just(resultDesc), String.class);
     }
 }

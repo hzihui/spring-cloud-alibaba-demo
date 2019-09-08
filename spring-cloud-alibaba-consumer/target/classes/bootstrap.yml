@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        #shared-dataids: ${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+        namespace: 9466c0d9-b5bd-4f1a-9936-10e37656afdf
+  profiles:
+    active: dev
